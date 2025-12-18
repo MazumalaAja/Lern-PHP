@@ -1,6 +1,6 @@
 <?php
 
-// Masih melanjutkan manipulasi string
+// => Masih melanjutkan manipulasi string
 $stirng_1 = "Saya suka belajar PHP dan menurut saya PHP adalah bahasa terbaik";
 $stirng_2 = "Javascript adalah bahasa terbaik";
 
@@ -32,3 +32,63 @@ echo "<br>";
 // substr(kalimat, mulai dari huruh ke berapa , samapi huruf ke berapa) jadi fungsi ini digunakan untuk mengambil sebagian dari string
 echo substr($stirng_1, 0, 20);
 echo "<br>";
+
+// => Operator Aritmatika
+// Jadi operator aritmatika digunakan untuk melakukan operasi matematika seperti tambah(+) , kurang(-) , kali(*) , bagi(/) bahkan pangkat(**)
+$a = 10;
+$b = 23;
+
+// Penjumlahan
+echo $a + $b;
+echo "<br>";
+
+// Pengurangan
+echo $a - $b;
+echo "<br>";
+
+// Perkalian
+echo $a * $b;
+echo "<br>";
+
+// Pembagian
+echo $a / $b;
+echo "<br>";
+
+// Pangkat
+echo $a ** 10;
+echo "<br>";
+
+
+// => Operator Perbandingan
+// Dalam operator perbandingan nilai yg dihasilkan hanyalah true atau false
+// Operator perbanding berarti akan membandingkan 2 nilai atau lebih 
+// Dalam operator perbandingan ada beberapa operator yaitu (== , != , === , !== , > , < , <= , >= );
+echo $a == "10";
+echo "<br>";
+
+echo $a != $b;
+echo "<br>";
+
+echo $a === 10;
+echo "<br>";
+
+echo $a != "10";
+echo "<br>";
+
+echo $a !== "10";
+echo "<br>";
+
+echo $a < $b;
+echo "<br>";
+
+echo $a > $b;
+echo "<br>";
+
+echo $a >= 10;
+echo "<br>";
+
+echo $a >= "10";
+echo "<br>";
+
+
+// => Operator Logika
