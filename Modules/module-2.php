@@ -92,3 +92,26 @@ echo "<br>";
 
 
 // => Operator Logika
+// Jadi operator logika ada beberapa yaitu (&& , || , ! , XOR)
+// && akan bernilai true jika pembanding 1 dan pembanding 2 sama-sama true
+// || akan bernilai true jika ada dari salah satu yang true dari 2 pembanding
+// ! membuat nilai dari pembanding jadi berkebalikan jika nilai pembanding 1 true maka ! akan menghasilkan nilai false
+// XOR dia hanya bernilai true kalau salah satu dari 2 pembanding true tapi klo dua"nya true maka nilainya jadi palse
+$c = true;
+$d = false;
+
+// &&
+var_dump($c && $d);
+echo "<br>";
+
+// &&
+var_dump($c || $d);
+echo "<br>";
+
+// &&
+var_dump(!$d);
+echo "<br>";
+
+// &&
+var_dump($c xor $d);
+echo "<br>";
