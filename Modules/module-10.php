@@ -36,12 +36,24 @@ class Smartphone
      public $name;
      protected $type;
      private $price;
+
+     public function setType($param)
+     {
+          $this->type = $param;
+     }
+
+     public function getType()
+     {
+          return $this->type;
+     }
 }
 
 $xiaomi = new Smartphone();
 $samsung = new Smartphone();
 $xiaomi->name = "xiaomi";
+$xiaomi->setType("Handphone");
 
 var_dump($xiaomi, $samsung);
 
-echo $xiaomi->name;
+echo $xiaomi->name . "<br>";
+echo "<br>Xiaomi : " .$xiaomi->getType();
