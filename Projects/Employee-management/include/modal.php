@@ -18,7 +18,7 @@
                          </div>
                          <div class="mb-3">
                               <label class="form-label" for="salary">Salary</label>
-                              <input name="salary" required id="salary" type="number" class="form-control" placeholder="Enter employee's salary...">
+                              <input min=0 max=9999999999 name="salary" required id="salary" type="number" class="form-control" placeholder="Enter employee's salary...">
                          </div>
                     </div>
                </div>

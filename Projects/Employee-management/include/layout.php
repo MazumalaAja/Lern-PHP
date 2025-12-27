@@ -1,8 +1,23 @@
 <?php
 require_once "../config/database.php";
 
+// for ($i = 0; $i <= 1000; $i++) {
+//      $username2 = "User ke-$i";
+//      $address2 = "Address ke-$i";
+//      $salary2 = rand(100000, 100000000);
+//      $database2 = $pdo->prepare("INSERT INTO employees (username,address,salary) VALUES (:username,:address,:salary)");
+//      $database2->execute([
+//           'username' => $username2,
+//           'address' => $address2,
+//           'salary' => $salary2
+//      ]);
+//      echo "1000 data berhasil ditambahkan";
+// }
+
+// $pdo->exec("DELETE FROM employees");
+
 // Get data from database
-$database = $pdo->prepare("SELECT * FROM employees");
+$database = $pdo->prepare("SELECT * FROM employees LIMIT 10");
 $database->execute();
 $employees = $database->fetchAll(PDO::FETCH_ASSOC);
 
